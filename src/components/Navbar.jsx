@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <nav className='p-3 flex items-center justify-between'>
         <div className='flex gap-2 items-center'>
-            <Workflow/>
-            <h1>Rohit.Dev</h1>
+            <Workflow color='#48ea69'/>
+            <h1 className='font-bold'>Rohit.Dev</h1>
         </div>
         {/* TODO */}
         <div>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className='flex items-center gap-5'>
             <AnimatedThemeToggler/>
             <Avatar size='md'>
-                <AvatarImage src="../../public/assests/avatar.png"/>
+                <AvatarImage src="../../public/assests/originalAvatar.jpeg"/>
                 <AvatarFallback>R</AvatarFallback>
             </Avatar>
             </div>
