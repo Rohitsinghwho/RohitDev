@@ -41,7 +41,8 @@ const Sidebar = () => {
           </div>
         ))}
       </div>
-      <Separator />
+
+      <Separator className={'hidden'} />
       {/* top skills */}
       <div className="md:flex flex-col gap-2 hidden">
         <div className="flex items-center justify-between">
