@@ -17,18 +17,32 @@ const username='rohitsinghwho'
 const ContributionGraphGithub = () => {
 
   const [data,setData]=useState([]);
+  const [totalContri, setTotalContri] = useState(0);
+   const [data2025, setData2025] = useState([]);  // Filtered 2025 only
 
     const fetchData=async()=>{
     try {
-      const response=await axios(`https://github-contributions-api.jogruber.de/v4/${username}?y=2025`);
+      const response=await axios(`https://github-contributions-api.jogruber.de/v4/${username}?y=all`);
       console.log(response.data);
       if(response.status!==200){
         throw new Error('Failed to fetch the Github data');
       }
-      setData(response.data.contributions);
+      const allContributions=response.data.contributions;
+      const year2025 = new Date().getFullYear() === 2025 ? allContributions : 
+      allContributions.filter(day => {
+        const date = new Date(day.date);
+        return date.getFullYear() === 2025;
+      });
+      setData2025(year2025);
+      setData(allContributions);
+      const total = response.data.contributions.reduce((sum, day) => sum + (day.count || 0), 0);
+      setTotalContri(total);
+
     } catch (error) {
       console.log(error);
-      setData([])
+      setData([]);
+      setData2025([]);
+      setTotalContri(0);
     }
   }
 
@@ -36,7 +50,7 @@ const ContributionGraphGithub = () => {
     fetchData();
   },[])
   return(
-  <ContributionGraph data={data} blockSize={8} fontSize={10}>
+  <ContributionGraph data={data2025} blockSize={8} fontSize={10}>
     <ContributionGraphCalendar>
       {({ activity, dayIndex, weekIndex }) => (
         <ContributionGraphBlock
@@ -55,11 +69,11 @@ const ContributionGraphGithub = () => {
     </ContributionGraphCalendar>
     <ContributionGraphFooter>
       <ContributionGraphTotalCount>
-        {({ totalCount, year }) => (
+        {() => (
           <div className="flex items-center gap-2">
-            <span className="text-muted-foreground text-sm">Year {year}:</span>
+            <span className="text-muted-foreground text-sm">Total :</span>
             <Badge variant="secondary">
-              {totalCount.toLocaleString()} contributions
+              {totalContri.toLocaleString()} contributions
             </Badge>
           </div>
         )}
