@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Repository from '@/pages/Repository'
 import Contact from '@/pages/Contact'
 import Overview from '@/pages/Overview'
+import Footer from "@/components/Footer"
 
 const MainLayout = () => {
   return (
@@ -29,8 +30,9 @@ const MainLayout = () => {
           <Route path="*" element={<Overview />} />
     </Routes>
   </div>
-  <div className="col-span-2 col-start-1 row-span-1 row-start-4 bg-pink-800 p-5">
+  <div className="col-span-2 col-start-1 row-span-1 row-start-4 p-5">
     {/* Footer */}
+    <Footer/>
   </div>
 </div>
 
