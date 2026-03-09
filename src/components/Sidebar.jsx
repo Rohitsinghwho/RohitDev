@@ -11,7 +11,7 @@ const Sidebar = () => {
       <div className="flex gap-5">
         <img
           className="h-20 w-20 rounded-xl"
-          src="../../public/assests/originalAvatar.jpeg"
+          src="/assests/originalAvatar.jpeg"
           alt="Rohit.dev"
         />
         <div className="flex flex-col justify-center">

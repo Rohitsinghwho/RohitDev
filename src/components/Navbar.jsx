@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className='flex items-center gap-5'>
             <AnimatedThemeToggler/>
             <Avatar size='md'>
-                <AvatarImage src="../../public/assests/originalAvatar.jpeg"/>
+                <AvatarImage src="/assests/originalAvatar.jpeg"/>
                 <AvatarFallback>R</AvatarFallback>
             </Avatar>
             </div>
