@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 sm:py-16 px-4">
+    <div className="min-h-screen py-12 sm:py-16 px-4">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         {/* Header - Mobile Optimized */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">

@@ -1,0 +1,103 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Url Shortner",
+      "description": "This is a Full-Stack service which is used to convert a long URL into a short URL. The puprose of this project is to return the user with a minimal URL string which can be shared anywhere with ease.",
+      "techstack":[
+        {"name":"React","color":"blue"},
+        {"name":"Tailwind CSS" , "color":"green"},
+        {"name":"Docker","color":"blue"},
+        {"name":"PostgreSQL", "color":"orange"},    
+        {"name":"vercel","color":"red"}
+      ],
+      "image":[
+        {
+            "image1":"/assests/projectImages/UrlShortner/mainv.png"
+        },
+        {
+            "image2":"/assests/projectImages/UrlShortner/recent.png"
+        }
+      ],
+      "demoUrl":"",
+      "githubUrl":"https://github.com/Rohitsinghwho/Url-shortner",
+      "startDate":"2026-01",
+      "endDate":"2026-01"
+    },
+    {
+      "id": 2,
+      "title": "Canteen Management System",
+      "description":"A simple and minimal MERN stack application for managing a canteen's menu items and orders.",
+      "techstack":[
+        {"name":"React","color":"blue"},
+        {"name":"Nodejs" , "color":"green"},
+        {"name":"JWT","color":"blue"},
+        {"name":"MongoDB", "color":"orange"},
+        {"name":"Express","color":"blue"}
+      ],
+      "image":[
+        {
+            "image1":"/assests/projectImages/CanteenMgt/browse.png"
+        },
+        {
+            "image2":"/assests/projectImages/CanteenMgt/menu.png"
+        },
+        {
+            "image3":"/assests/projectImages/CanteenMgt/login.png"
+        }
+
+      ],
+      "demoUrl":"https://canteen-mgt-system.vercel.app",
+      "githubUrl":"https://github.com/Rohitsinghwho/CanteenMgtSystem",
+      "startDate":"2025-09",
+      "endDate":"2025-09"
+    },
+    {
+        "id": 3,
+      "title": "Medify- Hospital Mgt System",
+      "description":"Medify is a modern web application built with React and Node.js, streamlining medication management and healthcare tracking for patients and caregivers. Featuring intuitive UI components like dynamic terminals and repo-style cards, it showcases full-stack skills including Docker containerization, PostgreSQL integration, and interactive visualizations—perfect for portfolios highlighting real-world health tech solutions",
+      "techstack":[
+        {"name":"React","color":"blue"},
+        {"name":"MaterialUI" , "color":"green"},
+        {"name":"CSS","color":"blue"},
+        {"name":"Axios", "color":"orange"},
+        {"name":"figma","color":"red"},
+        {"name":"Nodejs","color":"blue"}
+      ],
+      "image":[
+        {
+            "image1":"/assests/projectImages/Medify/main.png"
+        },
+        {
+            "image2":"/assests/projectImages/Medify/main2.png"
+        }      ],
+      "demoUrl":"https://medify-sigma-ten.vercel.app",
+      "githubUrl":"https://github.com/Rohitsinghwho/medify",
+      "startDate":"2025-07",
+      "endDate":"2025-07"
+    },
+    {
+        "id": 4,
+      "title": "Portfolio - Rohit.dev",
+      "description":"portfolio project is a modern, responsive React website built with shadcn/ui components, showcasing your full-stack skills in React, Node.js, Docker, three.js, and testing frameworks. It features a terminal-style UI, JSON-driven project data, skills display with logos, contact form, footer with social links, and responsive design optimized for mobile",
+      "techstack":[
+        {"name":"React","color":"blue"},
+        {"name":"Shadcn" , "color":"green"},
+        {"name":"CSS","color":"blue"},
+        {"name":"figma","color":"red"},
+        {"name":"lucide-react","color":"blue"}
+      ],
+      "image":[
+        {
+            "image1":"/assests/projectImages/Portfolio/main1.png"
+        },
+        {
+            "image2":"/assests/projectImages/Portfolio/main.png"
+        }      ],
+      "demoUrl":"https://rohit-dev-five.vercel.app",
+      "githubUrl":"https://github.com/Rohitsinghwho/RohitDev",
+      "startDate":"2026-03",
+      "endDate":"2025-03"
+    }
+  ]
+}

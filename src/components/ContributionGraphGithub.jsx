@@ -50,7 +50,7 @@ const ContributionGraphGithub = () => {
     fetchData();
   },[])
   return(
-  <ContributionGraph data={data2025} blockSize={8} fontSize={10}>
+  <ContributionGraph data={data2025} blockSize={15} fontSize={10} className="md:w-full md:flex md:items-center">
     <ContributionGraphCalendar>
       {({ activity, dayIndex, weekIndex }) => (
         <ContributionGraphBlock

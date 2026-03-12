@@ -13,14 +13,17 @@ const NavTabs = () => {
           return(
           <li
             key={items.link}
-            className={`py-2 flex gap-1 cursor-pointer items-center text-sm ${isActive?'text-[#48ea69] border-b border-b-[#48ea69]':''} `}
+            className={`py-2 flex gap-1 cursor-pointer items-center text-sm md:text-[16px] ${isActive?'text-[#48ea69] border-b border-b-[#48ea69]':''} `}
           >
             {items.icon}
             <Link to={items.link}>{items.text}</Link>
           </li>)
         })}
       </ul>
+      <div className="md:hidden">
       <Separator />
+
+      </div>
     </div>
   );
 };

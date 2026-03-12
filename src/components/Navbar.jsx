@@ -5,14 +5,14 @@ import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 import NavTabs from './NavTabs';
 const Navbar = () => {
   return (
-    <nav className='p-3 flex items-center justify-between'>
+    <nav className='p-3 flex items-center justify-between sticky top-0'>
         <div className='flex gap-2 items-center'>
             <Workflow color='#48ea69'/>
-            <h1 className='font-bold'>Rohit.Dev</h1>
+            <h1 className='font-bold md:text-2xl'>Rohit.Dev</h1>
         </div>
         {/* TODO */}
-        <div>
-            <div className='hidden'>
+        <div className='flex items-center gap-5'>
+            <div className='hidden md:flex'>
                 <NavTabs/>
             </div>
             <div className='flex items-center gap-5'>
